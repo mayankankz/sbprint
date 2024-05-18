@@ -1,13 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import TeamMembers from "./TeamMemberCard";
+import chintu from '../../assets/images/team/chintu.jpeg'
+import Mayank from '../../assets/images/team/mayank.jpg'
+
+import sachin from '../../assets/images/team/sachin.jpeg'
+
+import Naman from '../../assets/images/team/Naman.jpeg'
+
 function Team() {
   const teamMembers = [
     {
       id: 1,
       name: "shailendra goswami",
       position: "Founder / CEO",
-      imgSrc: "images/team/chintu.jpeg",
+      imgSrc: chintu,
       emaiId: "themeht23@gmail.com",
       phoneNo: "+91 9584730838",
       socialMedia: [
@@ -21,7 +28,7 @@ function Team() {
       id: 2,
       name: "Mayank GiriGoswami",
       position: "CTO / Tech Specialist",
-      imgSrc: "images/team/mayank.jpg",
+      imgSrc: Mayank,
       emaiId: "mayankgirigoswami2212@gmail.com",
       phoneNo: "+91-7869498557",
       socialMedia: [
@@ -35,7 +42,7 @@ function Team() {
       id: 3,
       name: "Sachin",
       position: "Marketing/Oprations Head",
-      imgSrc: "images/team/sachin.jpeg",
+      imgSrc: sachin,
       emaiId: "themeht23@gmail.com",
       phoneNo: "+91-234-567-8900",
       socialMedia: [
@@ -49,7 +56,7 @@ function Team() {
       id: 4,
       name: "Naman",
       position: "Marketing analyst",
-      imgSrc: "images/team/Naman.jpeg",
+      imgSrc: Naman,
       emaiId: "themeht23@gmail.com",
       phoneNo: "+91-234-567-8900",
       socialMedia: [
