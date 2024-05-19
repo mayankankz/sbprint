@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import FeatureCarousel from "./FeatureCarousel";
 import FeatureCard from "./FeatureCard";
-
+import one from "../../assets/images/features/01.png"
+import two from "../../assets/images/features/02.png"
+import three from "../../assets/images/features/03.png"
 function Feature() {
   const clients = [
     {
@@ -35,19 +37,19 @@ function Feature() {
       title: "Experience Design",
       description:
         "Get the most out of reducing your team’s operating costs. Let’s collaborate to streamline your processes and enhance your workflow, ensuring you focus on what truly matters.",
-      image: "images/features/01.png",
+      image: one,
     },
     {
       title: "Analyze Your Data",
       description:
         "Harness the power of your data with our advanced analysis tools. Gain valuable insights to drive informed decisions and optimize your operations for maximum performance.",
-      image: "images/features/02.png",
+      image: two,
     },
     {
       title: "Task Management",
       description:
         "Simplify task management with our intuitive tools. Keep your team organized, track progress seamlessly, and ensure every project is completed on time and within budget.",
-      image: "images/features/03.png",
+      image: three,
     },
   ];
   return (
