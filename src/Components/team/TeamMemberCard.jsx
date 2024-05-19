@@ -25,10 +25,7 @@ const TeamMembers = ({ teamMembers }) => {
               <h6 className="mb-0 me-2">
                 <Link
                   className="btn-link"
-                  to="/team-single"
-                  onClick={() => {
-                    dispatch(setSelectedTeamMember(member.name));
-                  }}
+                  
                 >
                   {member.name}
                 </Link>
