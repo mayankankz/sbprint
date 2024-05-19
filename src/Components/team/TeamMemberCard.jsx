@@ -39,7 +39,7 @@ const TeamMembers = ({ teamMembers }) => {
               <CardImg
                 top
                 width="100%"
-                src={`../src/assets/${member.imgSrc}`}
+                src={member.imgSrc}
                 alt={member.name}
                 className="img-fluid rounded-4"
               />
