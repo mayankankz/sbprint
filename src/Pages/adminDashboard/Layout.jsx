@@ -7,7 +7,7 @@ import {
   EditOutlined, HomeOutlined,
   UserOutlined,
 } from '@ant-design/icons';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Breadcrumb, Layout, Menu, theme, ConfigProvider } from 'antd';
 
 
@@ -27,7 +27,7 @@ const items = [
   getItem('Editor', '2', <EditOutlined />, null, '/admin/editor'),
   getItem('Student', 'sub1', <UserOutlined />, [
     getItem('Add Student', '3', null, null, '/admin/addstudent'),
-    getItem('Student List', '4', null, null, '/admin/studentlist'),
+    getItem('Generate ID Cards', '4', null, null, '/admin/studentlist'),
     getItem('Check List', '5', null, null, '/admin/checklist'),
   ], '/admin/user'),
   getItem('Create School', '9', <HomeOutlined />, null, '/admin/create-school'),
@@ -56,7 +56,7 @@ const AdminLayout = () => {
       },
     },
   };
-
+  const location = useLocation();
   return (
     <ConfigProvider theme={{ token: { colorPrimary: '#EB3E35' } }}>
       <Layout style={{ minHeight: '100vh' }}>
@@ -70,7 +70,7 @@ const AdminLayout = () => {
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
         </Sider>
         <Layout>
-          <Content style={{ padding: '20px' }}>
+          <Content style={{ padding: '20px' } }>
             <Outlet />
           </Content>
         </Layout>

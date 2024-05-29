@@ -5,6 +5,7 @@ import FeatureCard from "./FeatureCard";
 import one from "../../assets/images/features/01.png"
 import two from "../../assets/images/features/02.png"
 import three from "../../assets/images/features/03.png"
+
 function Feature() {
   const clients = [
     {
@@ -77,7 +78,7 @@ function Feature() {
                 key={feature.title}
                 title={feature.title}
                 description={feature.description}
-                image={feature.image}
+                image={`../src/assets/${feature.image}`}
                 id={index}
               />
             ))}

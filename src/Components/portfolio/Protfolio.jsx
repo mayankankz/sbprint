@@ -89,9 +89,7 @@ debugger
                         <Link
                           className="btn-link"
                           to="/service"
-                          onClick={() => {
-                            dispatch(setSelectedPortFolio(item.title));
-                          }}
+                          
                         >
                           {item.title}
                         </Link>

@@ -49,6 +49,7 @@ import Editor from "./Pages/adminDashboard/Editor/Editor";
 import DashBoard from "./Pages/adminDashboard/Dashbaord/DashBoard";
 import AdminLayout from "./Pages/adminDashboard/Layout";
 import Portfolio from "./Components/portfolio/Protfolio";
+import StudentList from "./Pages/adminDashboard/studentList";
 function App() {
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
@@ -164,6 +165,7 @@ function App() {
                 
                   <Route index element={<DashBoard />} />
                   <Route path="editor" element={<Editor />} />
+                  <Route path="studentlist" element={<StudentList />} />
                 </Route>
                 <Route path="/login" element={<SignIn />} />
                 {/* <Route path="/:mediaType/:id" element={<Details />} />

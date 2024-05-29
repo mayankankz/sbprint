@@ -25,7 +25,7 @@ const TeamMembers = ({ teamMembers }) => {
               <h6 className="mb-0 me-2">
                 <Link
                   className="btn-link"
-                  
+                 
                 >
                   {member.name}
                 </Link>
